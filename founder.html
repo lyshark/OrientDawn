@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王瑞 - 创始人履历 | 启明曙光官网</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.orientdawn.com/image/logo-icon.png">
+    <meta name="description" content="王瑞，北京启明曙光科技有限公司创始人、执行董事兼总经理，微软全球最有价值专家（Microsoft MVP），信息安全专家。">
+    <meta name="keywords" content="王瑞,启明曙光,创始人,Microsoft MVP,信息安全专家">
+    
+    <script src="./js/tailwindcss.js"></script>
+    <link rel="stylesheet" href="./js/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F4C81',
+                        secondary: '#FF8A00',
+                        dark: '#1A202C',
+                        light: '#F7FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            }
+            .text-shadow-lg {
+                text-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            }
+            .bg-gradient {
+                background: linear-gradient(102deg, #e40303 0%, #d1be20 100%);
+            }
+            .bg-gradient-secondary {
+                background: linear-gradient(135deg, #FF8A00 0%, #FFB74D 100%);
+            }
+            .transition-custom {
+                transition: all 0.3s ease-in-out;
+            }
+            .card-hover {
+                @apply hover:shadow-lg hover:-translate-y-1 transition-custom;
+            }
+        }
+    </style>
+    <style>
+        @keyframes pulse-ring {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+        @keyframes pulse-ring-2 {
+            0% { transform: scale(1.2); opacity: 0.6; }
+            100% { transform: scale(1.8); opacity: 0; }
+        }
+        .animate-pulse-ring {
+            animation: pulse-ring 2s ease-out infinite;
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+        .animate-pulse-ring-2 {
+            animation: pulse-ring-2 2s ease-out infinite;
+            border: 2px solid rgba(255,255,255,0.3);
+            animation-delay: 1s;
+        }
+        @keyframes orbit {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-orbit {
+            animation: orbit 10s linear infinite;
+        }
+        @keyframes float-1 {
+            0%, 100% { transform: translateY(0) translateX(0); opacity: 0.4; }
+            50% { transform: translateY(-15px) translateX(10px); opacity: 0.8; }
+        }
+        @keyframes float-2 {
+            0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+            50% { transform: translateY(-20px) translateX(-5px); opacity: 0.7; }
+        }
+        @keyframes float-3 {
+            0%, 100% { transform: translateY(0) translateX(0); opacity: 0.5; }
+            50% { transform: translateY(-10px) translateX(15px); opacity: 0.9; }
+        }
+        .animate-float-1 { animation: float-1 4s ease-in-out infinite; }
+        .animate-float-2 { animation: float-2 5s ease-in-out infinite; }
+        .animate-float-3 { animation: float-3 3.5s ease-in-out infinite; }
+        @keyframes spin-slow {
+            from { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
+            to { transform: translateX(-50%) translateY(-50%) rotate(360deg); }
+        }
+        @keyframes spin-reverse {
+            from { transform: translateX(-50%) translateY(-50%) rotate(360deg); }
+            to { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
+        }
+        .animate-spin-slow { animation: spin-slow 8s linear infinite; }
+        .animate-spin-reverse { animation: spin-reverse 6s linear infinite; }
+        
+        .ref-link {
+            cursor: pointer;
+            position: relative;
+        }
+        .ref-link:hover .ref-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+        .ref-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1A202C;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            z-index: 100;
+            margin-bottom: 8px;
+        }
+        .ref-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: #1A202C;
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-gray-50 antialiased">
+
+
+    <section class="pt-24 pb-10 bg-gradient-to-br from-[#0F4C81] via-[#1E3A5F] to-[#0A2942] relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-4 md:px-6 relative z-10">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-6">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 text-shadow">王瑞</h1>
+                        <p class="text-lg text-white/80">微软全球最有价值专家、科创中国专家库专家、启明曙光 创始人</p>
+                    </div>
+                    <div class="flex gap-4 mt-4 md:mt-0">
+                        <a href="#ref" class="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-lg transition-custom text-sm font-medium text-white">
+                            <i class="fa-solid fa-book-open"></i> 参考资料
+                        </a>
+                    </div>
+                </div>
+                <div class="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <main class="py-8">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                    <aside class="lg:col-span-1 order-1 lg:order-1">
+                        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden sticky top-24">
+                            <div class="bg-gradient-to-br from-[#cf2020] to-[#FF8A00] p-6 relative overflow-hidden">
+                                <div class="absolute inset-0">
+                                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
+                                    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-pulse" style="animation-delay: 1s;"></div>
+                                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-white/10 rounded-full animate-spin-slow"></div>
+                                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-white/15 rounded-full animate-spin-reverse"></div>
+                                    <div class="absolute top-1/4 right-1/4 w-3 h-3 bg-white/40 rounded-full animate-float-1"></div>
+                                    <div class="absolute top-1/3 left-1/4 w-2 h-2 bg-white/30 rounded-full animate-float-2"></div>
+                                    <div class="absolute bottom-1/4 right-1/3 w-3 h-3 bg-white/50 rounded-full animate-float-3"></div>
+                                </div>
+                                <div class="relative z-10 text-center">
+                                    <div class="relative inline-block mb-4">
+                                        <div class="relative w-32 h-32 mx-auto">
+                                            <div class="absolute inset-0 rounded-full animate-pulse-ring"></div>
+                                            <div class="absolute inset-0 rounded-full animate-pulse-ring-2"></div>
+                                            <div class="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-white/50">
+                                                <img src="./image/founder-avatar.jpg" alt="王瑞" class="w-full h-full object-cover">
+                                            </div>
+                                            <div class="absolute inset-0 rounded-full border border-dashed border-white/20 animate-orbit"></div>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-white mb-1">王瑞</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="p-5">
+                                <div class="border-b border-gray-100 pb-4 mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                                        <i class="fa-solid fa-id-card text-secondary"></i> 基本信息
+                                    </h4>
+                                    <dl class="space-y-3 text-sm">
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">中文名</dt>
+                                            <dd class="text-gray-800">王瑞</dd>
+                                        </div>
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">外文名</dt>
+                                            <dd class="text-gray-800">RuiWang</dd>
+                                        </div>
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">国籍</dt>
+                                            <dd class="text-gray-800">中国</dd>
+                                        </div>
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">民族</dt>
+                                            <dd class="text-gray-800">汉族</dd>
+                                        </div>
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">籍贯</dt>
+                                            <dd class="text-gray-800">山东省泰安市</dd>
+                                        </div>
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">出生日期</dt>
+                                            <dd class="text-gray-800">1997年11月</dd>
+                                        </div>
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">星座</dt>
+                                            <dd class="text-gray-800">天蝎座</dd>
+                                        </div>
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">学历</dt>
+                                            <dd class="text-gray-800">本科</dd>
+                                        </div>
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">毕业院校</dt>
+                                            <dd class="text-gray-800">中国海洋大学</dd>
+                                        </div>
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">职务</dt>
+                                            <dd class="text-gray-800">执行董事 总经理</dd>
+                                        </div>
+                                        <div class="flex">
+                                            <dt class="w-24 text-gray-500 flex-shrink-0">就职企业</dt>
+                                            <dd class="text-gray-800">启明曙光科技</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                                        <i class="fa-solid fa-globe text-secondary"></i> 社交链接
+                                    </h4>
+                                    <div class="flex flex-wrap gap-3">
+                                        <a href="https://github.com/RuiWang1997/" class="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-primary transition-custom" title="GitHub">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                        <a href="https://lyshark.cnblogs.com/" class="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-primary transition-custom" title="博客园">
+                                            <i class="fa-solid fa-rss"></i>
+                                        </a>
+                                        <a href="https://lyshark.blog.csdn.net" class="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-primary transition-custom" title="CSDN">
+                                            <i class="fa-brands fa-c"></i>
+                                        </a>
+                                        <a href="mailto:wangrui@orientdawn.com" class="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-primary transition-custom" title="邮箱">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <article class="lg:col-span-3 order-2 lg:order-2">
+                        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                            <section id="intro" class="mb-10">
+                                <h2 class="text-2xl font-bold text-dark mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-user-circle text-secondary"></i> 人物简介
+                                </h2>
+                                <div class="h-px bg-gradient-to-r from-secondary/50 to-transparent mb-4 w-24"></div>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    王瑞，男，汉族，1997年11月生，山东泰安人，原奇安信科技集团安全研究员<ref-link class="ref-link text-secondary text-xs" data-ref="1">[1]</ref-link>，现任北京启明曙光科技有限公司执行董事&总经理<ref-link class="ref-link text-secondary text-xs" data-ref="60">[60]</ref-link>，LYSHARK（信息安全电子刊物出版品牌）创始人<ref-link class="ref-link text-secondary text-xs" data-ref="20">[20]</ref-link>，资深信息安全专家<ref-link class="ref-link text-secondary text-xs" data-ref="21">[21]</ref-link>。
+                                </p>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    他是一名自学成才的信息安全专家，自09年开始涉足编程技术领域。他擅长于 Visual C++ 安全编程、Windows 驱动开发以及二进制逆向分析等，致力于研究 Microsoft 技术在信息安全领域的最佳技术实践，并在业内拥有超过10余年的行业研究经验<ref-link class="ref-link text-secondary text-xs" data-ref="1">[1]</ref-link>。从 Windows 98 到最新的 Windows 11 操作系统，他见证了微软技术的图形化迭代，正是这样的历程，让他对微软及 Windows 产生了更深的情感。
+                                </p>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    他热爱计算机安全行业，并始终保持初心，持续付出对该行业的研究热情。他常在互联网博客平台分享其深厚的研究经验及成果，对网络安全、渗透测试、安全开发、安全运维、软件逆向分析、计算机反病毒等领域均表现出浓厚的兴趣<ref-link class="ref-link text-secondary text-xs" data-ref="1">[1]</ref-link>。
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    作者深耕信息安全领域，专注 Microsoft 技术在信息安全的实践与创新，撰写并发表《灰帽黑客：攻守道》<ref-link class="ref-link text-secondary text-xs" data-ref="3">[3]</ref-link>、《Windows 内核安全编程技术实践》<ref-link class="ref-link text-secondary text-xs" data-ref="4">[4]</ref-link>等专业著作，系统剖析攻防技术与内核安全编程，并持有 8 项信息安全领域原创软件著作权，推动技术成果转化，为信息安全防护提供有力支撑<ref-link class="ref-link text-secondary text-xs" data-ref="40">[40]</ref-link>。
+                                </p>
+                            </section>
+
+                            <section id="career" class="mb-10">
+                                <h2 class="text-2xl font-bold text-dark mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-briefcase text-secondary"></i> 职业履历
+                                </h2>
+                                <div class="h-px bg-gradient-to-r from-secondary/50 to-transparent mb-6 w-24"></div>
+                                <div class="relative">
+                                    <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                                    <div class="space-y-8">
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-secondary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">启明曙光公司</h3>
+                                                    <span class="text-sm text-gray-500">2026年1月 - 至今</span>
+                                                </div>
+                                                <p class="text-secondary font-medium mb-2">执行董事 & 总经理</p>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    创立北京启明曙光科技有限公司，致力于人工智能技术落地与普及，践行OPC轻量化运营理念，聚焦AI算法创新与场景化应用<ref-link class="ref-link text-secondary text-xs" data-ref="60">[60]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">奇安信科技集团</h3>
+                                                    <span class="text-sm text-gray-500">2025年06月 - 2026年03月</span>
+                                                </div>
+                                                <p class="text-secondary font-medium mb-2">工控安全实验室 - 安全研究员</p>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    深耕二进制安全、漏洞挖掘与利用方向，聚焦前沿攻防技术研究，专注于 IoT 等设备的 0day 未授权漏洞挖掘，通过二进制程序深度分析、固件模拟运行等方式，精准发现未授权远程代码执行等高风险 RCE 漏洞。熟练运用逆向工程技术，深入理解操作系统与应用程序底层逻辑，相关研究成果直接服务于军委、军工、国防、电网等部门，为其提供定制化漏洞利用等前沿技术方案。多次出差至各大军工企业开展核心资产安全测试与评估，挖掘高危漏洞，撰写贴合实际场景的技术方案，并参与方案落地实现与持续优化，为国家基础设施安全防护提供坚实技术支撑<ref-link class="ref-link text-secondary text-xs" data-ref="1">[1]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">东华软件集团</h3>
+                                                    <span class="text-sm text-gray-500">2024年10月 - 2025年05月</span>
+                                                </div>
+                                                <p class="text-secondary font-medium mb-2">金融软件部 - 系统运维工程师</p>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    负责多平台系统运维与管理工作。全面负责 Linux/Windows 系统部署、升级、迁移及初始化配置，完成软件管理与权限管控；承担多品牌服务器硬件运维，通过 iBMC 实现远程监控、调优与故障处理，统筹 IDC 机房设备管理，规范服务器上下架、机房巡检及带外网络配置流程。独立负责信创国产化系统部署适配、性能调优与安全加固，开展补丁更新、网络配置等日常维护，主导云系统资产动态管理，优化运维流程与巡检体系，保障系统稳定高效运行。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">联通数科公司</h3>
+                                                    <span class="text-sm text-gray-500">2020年11月 - 2024年09月</span>
+                                                </div>
+                                                <p class="text-secondary font-medium mb-2">网运电商运营组 - 私有云运维工程师</p>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    为亦庄机房运维体系核心负责人，负责 485 台物理机及 4000 余台虚拟服务器运维管理，平台基于 VMWare 私有云集群架构搭建，承载电话导航、智能语音助手等核心业务，依托集群技术实现资源动态调度与高可用，支撑亿万级用户并发访问及数据处理，是联通智能语音服务核心业务平台。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-gray-400 rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">技术研究起点</h3>
+                                                    <span class="text-sm text-gray-500">2009年 - 至今</span>
+                                                </div>
+                                                <p class="text-secondary font-medium mb-2">独立开发者 / 安全研究员</p>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    自2009年开始自学编程技术，从 Windows 98 到 Windows 11，深耕信息安全领域十余年，专注于Windows底层编程、网络安全、渗透测试、二进制逆向等技术研究<ref-link class="ref-link text-secondary text-xs" data-ref="1">[1]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="research" class="mb-10">
+                                <h2 class="text-2xl font-bold text-dark mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-flask text-secondary"></i> 研究方向
+                                </h2>
+                                <div class="h-px bg-gradient-to-r from-secondary/50 to-transparent mb-4 w-24"></div>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    主要研究方向包括高级渗透测试、Web安全、漏洞挖掘与修复、APT攻击防范、无线安全、二进制逆向分析、数字化司法取证、反病毒技术、物联网设备安全、社工测试与防范、反网络欺骗、威胁情报分析、网络攻防演习、红队评测、区块链安全、云安全、数据隐私保护、安全合规与标准、深度学习与安全以及人工智能安全等领域<ref-link class="ref-link text-secondary text-xs" data-ref="1">[1]</ref-link>。
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">高级渗透测试</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Web安全</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">漏洞挖掘与修复</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">APT攻击防范</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">无线安全</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">二进制逆向分析</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">数字化司法取证</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">反病毒技术</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">物联网设备安全</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">威胁情报分析</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">网络攻防演习</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">红队评测</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">区块链安全</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">云安全</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">数据隐私保护</span>
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">人工智能安全</span>
+                                </div>
+                            </section>
+
+                            <section id="achievements" class="mb-10">
+                                <h2 class="text-2xl font-bold text-dark mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-award text-secondary"></i> 所获荣誉
+                                </h2>
+                                <div class="h-px bg-gradient-to-r from-secondary/50 to-transparent mb-6 w-24"></div>
+                                <div class="relative">
+                                    <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                                    <div class="space-y-6">
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-secondary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">微软最有价值专家奖</h3>
+                                                    <span class="text-sm text-gray-500">2024年05月01日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    获评微软最有价值专家奖（奖项类别：Developer Technologies、技术领域：C++）<ref-link class="ref-link text-secondary text-xs" data-ref="1">[1]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">腾讯云开发者社区原创作者热度排行榜第11名</h3>
+                                                    <span class="text-sm text-gray-500">2023年12月29日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    获腾讯云开发者社区2023年度原创作者热度排行榜第11名<ref-link class="ref-link text-secondary text-xs" data-ref="24">[24]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">联合国国际劳工组织人工智能大师班认证</h3>
+                                                    <span class="text-sm text-gray-500">2025年04月28日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    参加由联合国国际劳工组织（ITCILO）主办的人工智能大师班认证计划，并获成就证书<ref-link class="ref-link text-secondary text-xs" data-ref="44">[44]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">联合国教科文组织在线教师培训计划</h3>
+                                                    <span class="text-sm text-gray-500">2025年05月02日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    参加由联合国教科文组织（UNESCO）主办的在线教师培训计划课程，并获成就证书<ref-link class="ref-link text-secondary text-xs" data-ref="38">[38]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">美国圣塔克拉拉大学创业教育课程结业证书</h3>
+                                                    <span class="text-sm text-gray-500">2025年05月06日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    获美国圣塔克拉拉大学（Santa Clara University）商学院颁发的创业教育课程结业证书<ref-link class="ref-link text-secondary text-xs" data-ref="37">[37]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="bg-gray-50 rounded-xl p-4">
+                                        <h4 class="font-semibold text-dark mb-2">社区荣誉</h4>
+                                        <ul class="text-sm text-gray-600 space-y-1">
+                                            <li>2022年度腾讯云优秀作者奖<ref-link class="ref-link text-secondary text-xs" data-ref="55">[55]</ref-link></li>
+                                            <li>2023年度51CTO博主奖<ref-link class="ref-link text-secondary text-xs" data-ref="56">[56]</ref-link></li>
+                                            <li>2023年度CSDN博客之星奖<ref-link class="ref-link text-secondary text-xs" data-ref="57">[57]</ref-link></li>
+                                            <li>2023年度腾讯云影响力创作者奖<ref-link class="ref-link text-secondary text-xs" data-ref="58">[58]</ref-link></li>
+                                            <li>腾讯云社区创作之星奖<ref-link class="ref-link text-secondary text-xs" data-ref="59">[59]</ref-link></li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-xl p-4">
+                                        <h4 class="font-semibold text-dark mb-2">专业认证</h4>
+                                        <ul class="text-sm text-gray-600 space-y-1">
+                                            <li>微软全球最有价值专家（MVP）<ref-link class="ref-link text-secondary text-xs" data-ref="1">[1]</ref-link></li>
+                                            <li>华为云开发者专家（HCDE）<ref-link class="ref-link text-secondary text-xs" data-ref="21">[21]</ref-link></li>
+                                            <li>金山办公最有价值专家（KVP）<ref-link class="ref-link text-secondary text-xs" data-ref="61">[61]</ref-link></li>
+                                            <li>红帽系统工程师（RHCE）<ref-link class="ref-link text-secondary text-xs" data-ref="23">[23]</ref-link></li>
+                                            <li>工信部网络安全高级架构师<ref-link class="ref-link text-secondary text-xs" data-ref="47">[47]</ref-link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="activities" class="mb-10">
+                                <h2 class="text-2xl font-bold text-dark mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-users text-secondary"></i> 社会活动
+                                </h2>
+                                <div class="h-px bg-gradient-to-r from-secondary/50 to-transparent mb-6 w-24"></div>
+
+                                <div class="mb-8">
+                                    <h3 class="text-lg font-semibold text-dark mb-4 flex items-center gap-2">
+                                        <i class="fa-solid fa-images text-secondary"></i> 活动图集
+                                    </h3>
+                                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                                        <div class="group relative overflow-hidden rounded-xl cursor-pointer" onclick="openImageModal('https://via.placeholder.com/400x300/1a1a2e/ffffff?text=Microsoft+MVP+Award+2024')">
+                                            <img src="https://via.placeholder.com/400x300/1a1a2e/ffffff?text=Microsoft+MVP+Award+2024" alt="微软MVP获奖" class="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110">
+                                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                                <span class="text-white text-sm">微软MVP获奖</span>
+                                            </div>
+                                        </div>
+                                        <div class="group relative overflow-hidden rounded-xl cursor-pointer" onclick="openImageModal('https://via.placeholder.com/400x300/16213e/ffffff?text=Julia+Liuson+Meeting')">
+                                            <img src="https://via.placeholder.com/400x300/16213e/ffffff?text=Julia+Liuson+Meeting" alt="与微软全球资深副总裁会面" class="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110">
+                                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                                <span class="text-white text-sm">与潘正磊会面</span>
+                                            </div>
+                                        </div>
+                                        <div class="group relative overflow-hidden rounded-xl cursor-pointer" onclick="openImageModal('https://via.placeholder.com/400x300/0f3460/ffffff?text=Microsoft+AI+Day')">
+                                            <img src="https://via.placeholder.com/400x300/0f3460/ffffff?text=Microsoft+AI+Day" alt="Microsoft AI Day" class="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110">
+                                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                                <span class="text-white text-sm">Microsoft AI Day</span>
+                                            </div>
+                                        </div>
+                                        <div class="group relative overflow-hidden rounded-xl cursor-pointer" onclick="openImageModal('https://via.placeholder.com/400x300/533483/ffffff?text=Post+Microsoft+Build')">
+                                            <img src="https://via.placeholder.com/400x300/533483/ffffff?text=Post+Microsoft+Build" alt="Post Microsoft Build" class="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110">
+                                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                                <span class="text-white text-sm">Post Microsoft Build</span>
+                                            </div>
+                                        </div>
+                                        <div class="group relative overflow-hidden rounded-xl cursor-pointer" onclick="openImageModal('https://via.placeholder.com/400x300/e94560/ffffff?text=Prompt+Engineering+Conf')">
+                                            <img src="https://via.placeholder.com/400x300/e94560/ffffff?text=Prompt+Engineering+Conf" alt="Prompt Engineering Conf" class="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110">
+                                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                                <span class="text-white text-sm">Prompt Engineering Conf</span>
+                                            </div>
+                                        </div>
+                                        <div class="group relative overflow-hidden rounded-xl cursor-pointer" onclick="openImageModal('https://via.placeholder.com/400x300/ff6b6b/ffffff?text=Season+of+AI+for+Copilot')">
+                                            <img src="https://via.placeholder.com/400x300/ff6b6b/ffffff?text=Season+of+AI+for+Copilot" alt="Season of AI for Copilot" class="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110">
+                                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                                <span class="text-white text-sm">Season of AI for Copilot</span>
+                                            </div>
+                                        </div>
+                                        <div class="group relative overflow-hidden rounded-xl cursor-pointer" onclick="openImageModal('https://via.placeholder.com/400x300/4ecdc4/ffffff?text=Post+Microsoft+Ignite')">
+                                            <img src="https://via.placeholder.com/400x300/4ecdc4/ffffff?text=Post+Microsoft+Ignite" alt="Post Microsoft Ignite" class="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110">
+                                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                                <span class="text-white text-sm">Post Microsoft Ignite</span>
+                                            </div>
+                                        </div>
+                                        <div class="group relative overflow-hidden rounded-xl cursor-pointer" onclick="openImageModal('https://via.placeholder.com/400x300/95e1d3/ffffff?text=Season+of+AI-MCP')">
+                                            <img src="https://via.placeholder.com/400x300/95e1d3/ffffff?text=Season+of+AI-MCP" alt="Season of AI - MCP" class="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110">
+                                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                                <span class="text-white text-sm">Season of AI - MCP</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="text-lg font-semibold text-dark mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-calendar-alt text-secondary"></i> 活动详情
+                                </h3>
+                                <div class="relative">
+                                    <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                                    <div class="space-y-6">
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-secondary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">微软技术直通车 Season of AI - MCP</h3>
+                                                    <span class="text-sm text-gray-500">2025年12月27日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    受邀参加微软技术直通车（第二十八期）之 Season of AI - MCP（Beijing）演讲活动，其主题演讲为AI技术赋能软件安全：智能二进制攻防的创新实践，议题聚焦AI大模型在逆向分析领域的深度赋能，拆解智能工具的核心技术实现逻辑，系统解析MCP协议架构及自定义MCP Server开发全流程，通过实战案例结合反病毒等典型场景，具象化呈现大模型驱动安全工具提高分析效率的路径，阐释AI技术重塑二进制攻防体系的技术脉络与产业价值<ref-link class="ref-link text-secondary text-xs" data-ref="50">[50]</ref-link><ref-link class="ref-link text-secondary text-xs" data-ref="62">[62]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">Post Microsoft Ignite in Beijing 峰会</h3>
+                                                    <span class="text-sm text-gray-500">2024年11月30日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    受邀参加 Post Microsoft Ignite in Beijing 峰会，同微软技术专家以及微软最有价值专家（MVP）齐聚微软中国总部。此次峰会聚焦 AI 领域，不仅发布了诸多亮眼成果，包括 Copilot 全新专用智能体、凭借 Azure AI Foundry 与智能数据带动 Azure 创新、依托云基础设施助力 AI 转型以及针对安全领域生成式 AI 与数字化挑战的创新成果分享，并围绕 AI、开发者与安全解决方案等议题展开了深入探讨<ref-link class="ref-link text-secondary text-xs" data-ref="22">[22]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">微软技术直通车 Season of AI for Copilot</h3>
+                                                    <span class="text-sm text-gray-500">2024年11月2日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    受邀以讲师身份参加了在微软中国总部举行的微软技术直通车（第二十一期）之 Season of AI for Copilot（Beijing）活动。在活动中，他分享了对人工智能及微软 AI 系列工具的见解，涵盖 Copilot 的概念与发展、GitHub Copilot 的应用与局限、微软 Copilot 与 ChatGPT 的区别，以及 Microsoft 365 Copilot 和 Windows Copilot 的功能及应用场景等内容。此次活动聚焦人工智能与生产力的结合，充分展示了微软 Copilot 系列在多个领域的功能和应用前景，吸引了众多业内人士参与，为推动人工智能技术的发展和应用提供了重要平台<ref-link class="ref-link text-secondary text-xs" data-ref="19">[19]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">Prompt Engineering Conf 峰会</h3>
+                                                    <span class="text-sm text-gray-500">2024年8月31日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    以特邀嘉宾的身份参加了在北京微软大厦举办的 Prompt Engineering Conf—AI 赋能与应用实战主题峰会。此次峰会吸引了众多业内的专家学者、科技精英以及 AI 爱好者。峰会通过线上线下平台，汇聚了超过 7 万名观众，共同见证了 AI 技术与应用融合的前沿成果<ref-link class="ref-link text-secondary text-xs" data-ref="16">[16]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">Post Microsoft Build and AI Day</h3>
+                                                    <span class="text-sm text-gray-500">2024年6月15日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    参加 Microsoft Build 开发者大会北京站的延展活动—Post Microsoft Build and AI Day，此活动致力于向全球开发者展示微软的最新技术、产品和服务，同时深入研讨数据分析、AI 应用、边缘计算等热门话题，聚焦相关技术领域的最新发布及行业落地实践，并与微软最有价值专家（MVP）项目大中华区负责人梁迪（Christina Liang）合照留念<ref-link class="ref-link text-secondary text-xs" data-ref="14">[14]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">Microsoft AI Day in Beijing 峰会</h3>
+                                                    <span class="text-sm text-gray-500">2024年6月14日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    参加 Microsoft AI Day in Beijing 峰会，于活动期间与微软的高管、技术专家、合作伙伴、Microsoft Learn 团队以及 Microsoft MVP（微软最有价值专家）和 Microsoft RD（微软社区区域总监）等齐聚一堂，深入探讨 AI 智能技术的前瞻性见解以及丰富多样的行业应用场景<ref-link class="ref-link text-secondary text-xs" data-ref="15">[15]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">与微软全球资深副总裁会面</h3>
+                                                    <span class="text-sm text-gray-500">2024年5月31日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    与微软公司全球资深副总裁、微软开发部门总裁 Julia Liuson（潘正磊）在微软亚洲研究院会面，主要探讨了关于Visual Studio、.NET、Visual Studio Code、TypeScript、Azure、GitHub 以及 Copilot 等编程工具和编程语言，并提出改进意见、想法及建议，交流行业经验并合照留念<ref-link class="ref-link text-secondary text-xs" data-ref="13">[13]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-12">
+                                            <div class="absolute left-2 w-5 h-5 bg-gray-400 rounded-full border-4 border-white shadow-md"></div>
+                                            <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                                    <h3 class="font-semibold text-lg text-dark">获评微软最有价值专家（MVP）</h3>
+                                                    <span class="text-sm text-gray-500">2024年5月1日</span>
+                                                </div>
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    收到了来自美国微软公司的贺信，祝贺他成为本年度微软最有价值专家（Most Valuable Professional，MVP）大奖的获得者。MVP 奖是微软公司颁发给第三方技术专业人士的全球性荣誉奖项，代表着对全球范围内 IT 和互联网技术应用专家的最高荣誉。每年，该奖项从全球数千万技术专家中通过层层筛选产生。截至2023年，此项目已持续运作30年之久，在全球90多个国家拥有将近4000多位最有价值专家<ref-link class="ref-link text-secondary text-xs" data-ref="17">[17]</ref-link>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="quotes" class="mb-10">
+                                <h2 class="text-2xl font-bold text-dark mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-quote-left text-secondary"></i> 个人语录
+                                </h2>
+                                <div class="h-px bg-gradient-to-r from-secondary/50 to-transparent mb-6 w-24"></div>
+                                <div class="bg-gradient-to-r from-[#cf2020]/5 to-[#FF8A00]/5 p-8 rounded-2xl border border-[#cf2020]/10 relative overflow-hidden">
+                                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#FF8A00]/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                                    <div class="relative z-10">
+                                        <blockquote class="text-xl text-gray-800 font-medium italic text-center leading-relaxed">
+                                            "以技术创新驱动产业变革，让每一个微小的技术进步都能创造价值。"
+                                        </blockquote>
+                                        <p class="text-right text-gray-500 mt-4">— 王瑞</p>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                                    <div class="bg-gray-50 rounded-xl p-5 text-center">
+                                        <p class="text-gray-700 italic">"星星之火，可以燎原。"</p>
+                                        <p class="text-gray-500 text-sm mt-2">— 企业精神信念</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-xl p-5 text-center">
+                                        <p class="text-gray-700 italic">"十年磨一剑，厚积薄发。"</p>
+                                        <p class="text-gray-500 text-sm mt-2">— 个人发展理念</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="software" class="mb-10">
+                                <h2 class="text-2xl font-bold text-dark mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-code text-secondary"></i> 软件作品
+                                </h2>
+                                <div class="h-px bg-gradient-to-r from-secondary/50 to-transparent mb-6 w-24"></div>
+
+                                <div class="space-y-6">
+                                    <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h3 class="font-semibold text-lg text-dark">人工智能动态漏洞挖掘工具（LyScript）</h3>
+                                            <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">V1.1.0</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mb-3">版权登记号：2023SR0475117, 2024SR1010782, 2026SR0014808</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">
+                                            LyScript 是深度集成于 x64dbg 调试器的 Python 自动化测试框架，通过标准化 API 接口与 x64dbg 调试引擎无缝交互。该框架依托 Python 脚本化优势，为逆向工程、漏洞利用开发及恶意代码分析提供模块化解决方案，核心能力涵盖内存断点自动化漏洞挖掘、寄存器级精准调试控制、二进制指令流动态追踪及结构化反编译分析。用户可通过简洁的 Python 语法快速构建 POC 验证、模糊测试、ROP 链构造等高阶调试场景，结合跨平台远程调试协议，有效提升二进制安全研究中动态分析效率与漏洞复现精准度。此外，结合其配套开发的 x64dbgMCP 工具集并对接 Cherry Studio 工具，可驱动 x64dbg 实现智能化逆向分析、漏洞挖掘与处理，全面提升逆向分析效率，实现调试操作的自动化。<ref-link class="ref-link text-secondary text-xs" data-ref="5">[5]</ref-link>
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h3 class="font-semibold text-lg text-dark">人工智能静态漏洞挖掘工具（IDA Moles）</h3>
+                                            <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">V1.0.7</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mb-3">版权登记号：2026SR0130174</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">
+                                            IDA Moles 是深度集成于 IDA Pro 的专业静态逆向分析接口工具，通过标准化的调用逻辑与 IDA Pro 逆向引擎实现无缝交互，依托 Python 生态的简洁编程优势，为二进制逆向分析、恶意代码溯源、漏洞挖掘辅助等场景提供全流程的程序化解决方案，核心能力涵盖高效反编译控制、高级调试操作、深度内存分析、智能函数解析、MCP 服务器扩展及自动化批量处理，全方位满足逆向工程中的各类复杂分析需求。<ref-link class="ref-link text-secondary text-xs" data-ref="53">[53]</ref-link>
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h3 class="font-semibold text-lg text-dark">人工智能驱动的 PE 分析工具（PeView）</h3>
+                                            <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">V3.1.12</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mb-3">版权登记号：2023SR0490503</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">
+                                            PEView 是一款由 C/C++ 开发的轻量化、AI 驱动的 Windows PE/PE32+ 文件专业解析工具，主打静态解析、AI 赋能、多版本适配，专为逆向分析、反病毒检测及病毒木马样本深度解包分析设计，是安全研究人员的核心生产力工具。工具支持 EXE、DLL 等多格式及 32/64 位 PE 文件解析，可零执行风险下完成 DOS 头、NT 头等全维度原子级结构解析与查询，还能对接各类大模型实现对话式智能交互，快速生成结构化分析报告；内置 12+ 核心工具，支持解析结果可视化、多格式导出，以及交互式修改文件属性、构造 POC 样本等操作。工具适配 Windows 全系统，提供免费独立版、专业接口版、企业级 MCP 旗舰版三个版本，按需满足基础解析、开发集成、AI 旗舰分析等场景需求，支持命令行、服务端、Python 接口多方式操作，无恶意捆绑且支持商业定制开发，大幅提升逆向工程、数字取证等场景的分析效率。<ref-link class="ref-link text-secondary text-xs" data-ref="7">[7]</ref-link>
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h3 class="font-semibold text-lg text-dark">Windows 动态反汇编调试软件（LyDebugger）</h3>
+                                            <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">V2.0.0 / V2.1.0</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mb-3">版权登记号：2023SR0507262, 2026SR0130049</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">
+                                            LyDebug（LyDebugger）是一款由 C/C++ 自主开发的轻量级 CLI 版 Windows 应用层动态调试器，无第三方库依赖，是逆向分析、程序排错、漏洞研究领域的实用工具。该工具依托 Windows 系统调试 API 与 Capstone 反汇编引擎，完美支持 x86/x64 双架构程序调试，以命令行交互为核心模式，提供原子级的调试操作能力，作为轻量化调试工具，LyDebug 具备运行高效、操作直接的特点，无需复杂配置即可使用，能为逆向工程师、安全研究人员提供精准、稳定的动态调试支持，目前已形成完整的调试器雏形，适配恶意代码分析、漏洞挖掘、程序调试等各类技术场景。<ref-link class="ref-link text-secondary text-xs" data-ref="11">[11]</ref-link><ref-link class="ref-link text-secondary text-xs" data-ref="52">[52]</ref-link>
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h3 class="font-semibold text-lg text-dark">内核级内存读写驱动软件（LyMemory）</h3>
+                                            <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">V2.0.0</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mb-3">版权登记号：2023SR0490504</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">
+                                            LyMemory 是一款基于 Windows 内核态内存访问协议（KMAP）构建的模块化驱动级工具套件，其核心能力涵盖跨进程内存读写、内核对象操作及硬件虚拟化层监控。该工具通过创新性的分页表遍历算法实现物理内存级精确访问，支持多级指针链解析、内存池特征检索、分页属性动态探测等逆向工程关键场景，提供包括 EPT Hook 拦截、SMEP/SMAP 绕过、内存保护属性篡改等内核攻防对抗功能模块。用户可通过 Python 扩展接口构建自动化内存分析流水线，配合 SSDT/HAL Dispatch Table 监控模块，显著提升漏洞利用构造、反作弊对抗及 Rootkit 检测等场景的操作效率，驱动需在 Windows 调试模式或经过 WHQL 认证的数字签名环境下部署以实现完整功能矩阵。<ref-link class="ref-link text-secondary text-xs" data-ref="6">[6]</ref-link>
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h3 class="font-semibold text-lg text-dark">反汇编代码注入软件（LyInjector）</h3>
+                                            <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">V2.0.0</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mb-3">版权登记号：2023SR0490502</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">
+                                            LyInjector 是一款由 C/C++ 精心打造的专业应用层汇编代码注入工具，主要面向渗透测试工程师群体。它具备强大且实用的功能，用户能够借助它向指定的应用层进程强行注入 DLL 模块或者 ShellCode 指令集。同时该工具还支持对第三方进程进行汇编级的 Call 调用，也可用于特定 ShellCode 的完整性测试，确保其在目标环境中能正常运行。通过使用这款工具，极大地拓展了操作的灵活性。<ref-link class="ref-link text-secondary text-xs" data-ref="8">[8]</ref-link>
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h3 class="font-semibold text-lg text-dark">命令行版远程控制软件（LySocket）</h3>
+                                            <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">V1.3.0</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mb-3">版权登记号：2023SR0507263</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">
+                                            LySocket 是一款基于 C/S 架构的专业级远程管理工具，支持可自定义的套接字通信协议（如 TCP/UDP）及多用户协同管理模式。该工具深度融合系统指令执行、跨网络文件传输、硬件资源监控（CPU/内存/磁盘）等核心功能，结合 TLS 加密通信协议保障数据传输安全。通过 ShellCode 注入、内存取证与进程注入等底层操作，适用于渗透测试、权限维持、漏洞验证等网络安全场景。其多用户权限维持机制支持网络波动环境下的稳定会话控制，适用于企业级安全攻防演练与后渗透远程运维管理。<ref-link class="ref-link text-secondary text-xs" data-ref="9">[9]</ref-link>
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h3 class="font-semibold text-lg text-dark">内网穿透流量转发软件（TcpForward）</h3>
+                                            <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">V1.0.0</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mb-3">版权登记号：2023SR0507815</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">
+                                            TcpForward 是一款高性能 TCP 流量代理工具，专为渗透测试与内网渗透场景设计，基于 Socket 多路复用及流量定向路由技术，实现跨网络域安全隧道构建。核心功能涵盖端口映射、流量重定向、内外网穿透，支持动态规则配置与多级跳板中转，可精准转发特定主机与端口的流量路径，突破网络隔离策略，有效辅助红队攻击链中的横向移动、隐蔽通信及漏洞利用环节，提升攻防演练效率。<ref-link class="ref-link text-secondary text-xs" data-ref="10">[10]</ref-link>
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h3 class="font-semibold text-lg text-dark">外部 D3D 动态绘制库软件（D3DDrawLib）</h3>
+                                            <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">V1.0.0</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mb-3">版权登记号：2024SR1315376</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">
+                                            D3DDrawLib 是一款功能强大的跨进程动态绘图引擎库，基于 C++ 深度集成 Windows 图形子系统（Direct3D/GDI），它允许用户在 Windows 系统中与任意第三方进程进行交互并动态绘图，可实现对第三方应用界面的无侵入式图形叠加渲染。该库核心功能支持矢量图形（线条、矩形、多边形、文字）、文本标签、透明度混合及动态坐标校准，利用双缓冲机制与 GPU 加速确保高帧率（60+ FPS）绘制性能，可广泛应用于图像识别标注、游戏辅助开发、自动化测试等场景，为实时数据可视化提供毫秒级延迟的绘制解决方案，显著提升目标定位与信息标记效率。<ref-link class="ref-link text-secondary text-xs" data-ref="12">[12]</ref-link>
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl p-5 hover:bg-gray-100 transition-custom">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h3 class="font-semibold text-lg text-dark">基于AI驱动的动态调试软件（x64dbg MCP）</h3>
+                                            <span class="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">V1.0.0</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500 mb-3">配套 LyScript 使用</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">
+                                            x64dbg MCP 是基于 AI 驱动的动态调试扩展工具，与 LyScript 框架深度集成，通过 MCP（Model Context Protocol）协议实现大模型与调试器的无缝对接，为逆向分析提供智能化辅助能力。<ref-link class="ref-link text-secondary text-xs" data-ref="51">[51]</ref-link>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="publications" class="mb-10">
+                                <h2 class="text-2xl font-bold text-dark mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-book text-secondary"></i> 发表作品集
+                                </h2>
+                                <div class="h-px bg-gradient-to-r from-secondary/50 to-transparent mb-6 w-24"></div>
+                                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">C/C++ 反汇编系列实战</p>
+                                        <p class="text-xs text-gray-500 mt-1">8 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Flask Web 框架技术实践</p>
+                                        <p class="text-xs text-gray-500 mt-1">20 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Linux 系统运维技术实践</p>
+                                        <p class="text-xs text-gray-500 mt-1">67 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">MySQL 数据库从入门到精通</p>
+                                        <p class="text-xs text-gray-500 mt-1">22 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Python 编程技术实践</p>
+                                        <p class="text-xs text-gray-500 mt-1">35 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Python 代码片段总结</p>
+                                        <p class="text-xs text-gray-500 mt-1">27 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Python 入门系列教程</p>
+                                        <p class="text-xs text-gray-500 mt-1">25 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Qt Creator 编程技术实践</p>
+                                        <p class="text-xs text-gray-500 mt-1">48 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Qt 窗体开发从入门到精通</p>
+                                        <p class="text-xs text-gray-500 mt-1">34 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Visual C# 开发技术实战应用</p>
+                                        <p class="text-xs text-gray-500 mt-1">12 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Visual C++ 编程技术实践</p>
+                                        <p class="text-xs text-gray-500 mt-1">85 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Visual C++ 代码片段笔记</p>
+                                        <p class="text-xs text-gray-500 mt-1">29 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Visual C++ 入门系列教程</p>
+                                        <p class="text-xs text-gray-500 mt-1">47 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Windows PE结构系列教程</p>
+                                        <p class="text-xs text-gray-500 mt-1">15 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Windows 汇编语言入门教程</p>
+                                        <p class="text-xs text-gray-500 mt-1">26 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">Windows 内核安全编程技术实践</p>
+                                        <p class="text-xs text-gray-500 mt-1">93 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">x64dbg 自动化从入门到精通</p>
+                                        <p class="text-xs text-gray-500 mt-1">34 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">灰帽黑客：攻守道</p>
+                                        <p class="text-xs text-gray-500 mt-1">273 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">渗透测试与网络安全实战</p>
+                                        <p class="text-xs text-gray-500 mt-1">49 篇</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-custom">
+                                        <p class="text-sm font-medium text-dark">网络设备实战配置笔记</p>
+                                        <p class="text-xs text-gray-500 mt-1">9 篇</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="ref" class="mb-6">
+                                <h2 class="text-xl font-bold text-dark mb-3 flex items-center gap-2">
+                                    <i class="fa-solid fa-book-open text-secondary"></i> 参考资料
+                                </h2>
+                                <div class="h-px bg-gradient-to-r from-secondary/50 to-transparent mb-4 w-20"></div>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://mvp.microsoft.com/zh-CN/MVP/profile/0978166b-5f21-e511-80d0-00155d580b08">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">1</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 最有价值专家．微软官网 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://lyshark.cnblogs.com/">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">2</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 技术博客．博客园 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://lyshark.blog.csdn.net">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">3</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 《灰帽黑客：攻守道》．CSDN博客 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://lyshark.blog.csdn.net">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">4</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 《Windows 内核安全编程技术实践》．CSDN博客 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">5</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | LyScript 自动化漏洞挖掘软件．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">6</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | LyMemory 内存读写驱动软件．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">7</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | PeView PE文件分析软件．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">8</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | LyInjector 反汇编代码注入软件．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">9</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | LySocket 远程控制软件．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">10</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | TcpForward 内网穿透软件．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">11</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | LyDebugger 动态反汇编调试软件．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">12</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | D3DDrawLib 动态绘制库软件．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">13</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 与微软全球资深副总裁会面记录．微软亚洲研究院 [引用日期2024-05-31]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">14</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | Post Microsoft Build and AI Day 活动．微软中国 [引用日期2024-06-15]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">15</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | Microsoft AI Day in Beijing 峰会．微软中国 [引用日期2024-06-14]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">16</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | Prompt Engineering Conf 峰会．微软大厦 [引用日期2024-08-31]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">17</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 微软MVP贺信及奖项说明．微软公司 [引用日期2024-05-01]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://developer.huaweicloud.com/hero/rui-wang">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">18</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 华为云开发者专家（HCDE）．华为云开发者社区 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">19</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 微软技术直通车 Season of AI for Copilot．微软中国 [引用日期2024-11-02]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">20</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | LYSHARK 信息安全电子刊物出版品牌．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://developer.huaweicloud.com/hero/rui-wang">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">21</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 华为云开发者专家 / 金山KVP．华为云 / 金山办公 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">22</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | Post Microsoft Ignite in Beijing 峰会．微软中国 [引用日期2024-11-30]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">23</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 红帽系统工程师（RHCE）认证．红帽公司 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">24</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 腾讯云开发者社区年度排行榜．腾讯云 [引用日期2023-12-29]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">25</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 阿里云开发者社区专家．阿里云 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">26</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 51CTO 博客专家．51CTO [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">27</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 腾讯云社区创作之星．腾讯云 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">28</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | HarmonyOS 应用开发者高级认证．华为 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">29</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 美国计算机协会（ACM）会员．ACM [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">30</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 美国心理学会（APA）会员．APA [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">31</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 中国技术经济学会会员．中国技术经济学会 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">32</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 甲骨文数据库专家（OCP）/ APEX开发专家．Oracle [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">33</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 甲骨文人工智能向量检索专家．Oracle [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">34</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | IEEE 电气电子工程师学会会员．IEEE [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">35</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 中国知网星云专家库．中国知网 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">36</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 中国高等教育学会会员．中国高等教育学会 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">37</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 美国圣塔克拉拉大学创业教育课程．圣塔克拉拉大学 [引用日期2025-05-06]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">38</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 联合国教科文组织在线教师培训计划．UNESCO [引用日期2025-05-02]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://www.kepuchina.cn/expert/detail?id=12345">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">39</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 科创中国专家库．科创中国 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://expert.cnki.net/expert/detail?id=WR2024">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">40</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 中国知网论文评审专家库．中国知网 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">41</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 中国密码学会会员．中国密码学会 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">42</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 中国标准化协会会员．中国标准化协会 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">43</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 中国未来研究会终身会员．中国未来研究会 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">44</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 联合国国际劳工组织人工智能大师班．ITCILO [引用日期2025-04-28]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">45</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 中国发明协会会员．中国发明协会 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">46</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 微软Copilot人工智能领航者．微软 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">47</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 工信部网络安全高级架构师．工信部 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">48</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 奇安信科技集团安全研究员．奇安信 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">49</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 51CTO 特聘社区编辑．51CTO [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">50</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 微软技术直通车 Season of AI - MCP．微软中国 [引用日期2025-12-27]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">51</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | x64dbg MCP AI驱动调试软件．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">52</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | LyDebugger V2.1.0．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">53</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | IDA Moles 自动化静态逆向分析软件．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">54</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 中国知网论文评审专家库（星云）．中国知网 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">55</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 2022年度腾讯云优秀作者奖．腾讯云 [引用日期2023-12-29]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">56</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 2023年度51CTO博主奖．51CTO [引用日期2023-12-29]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">57</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 2023年度CSDN博客之星奖．CSDN [引用日期2023-12-29]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">58</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 2023年度腾讯云影响力创作者奖．腾讯云 [引用日期2023-12-29]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">59</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 腾讯云社区创作之星奖．腾讯云 [引用日期2023-12-29]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://www.orientdawn.com">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">60</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 北京启明曙光科技有限公司官网．启明曙光 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://www.wps.cn/community/experts/detail?id=WR2024">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">61</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 金山办公最有价值专家（KVP）．金山办公 [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-2 cursor-pointer group" data-ref-link="https://github.com/RuiWang1997">
+                                        <span class="w-5 h-5 bg-secondary text-white rounded-full flex items-center justify-center flex-shrink-0 text-xs mt-0.5">62</span>
+                                        <div class="flex-1">
+                                            <p class="text-gray-700 group-hover:text-primary">王瑞 | 个人技术博客与开源项目．GitHub [引用日期2024-05-03]</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center gap-2 mb-4">
+                            <img src="./image/logo-icon-1.png" alt="启明曙光 Logo" class="w-10 h-10">
+                            <span class="text-xl font-bold">东方曙光 星火燎原</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            心向黎明，便不惧长夜漫漫；眼有星河，便自有前路光亮。以文字为媒，与岁月相知，让每一份坚持，都在时光里悄然绽放，静待曙光自来。
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">快速链接</h4>
+                        <ul class="space-y-2 text-gray-400 text-sm">
+                            <li><a href="index.html" class="hover:text-white transition-colors">首页</a></li>
+                            <li><a href="founder.html" class="hover:text-white transition-colors">创始人履历</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">联系方式</h4>
+                        <ul class="space-y-2 text-gray-400 text-sm">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:contact@orientdawn.com" class="hover:text-white transition-colors">contact@orientdawn.com</a>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+86 19153835320</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                    <p>版权所有 © 2026 北京启明曙光科技有限公司 保留最终解释权</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
+        <button id="closeModal" class="absolute top-4 right-4 text-white/80 hover:text-white text-2xl">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="modalImage" src="" alt="参考资料图片" class="max-w-full max-h-full rounded-lg shadow-2xl">
+    </div>
+
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('[data-ref-link]').forEach(function(item) {
+            item.addEventListener('click', function() {
+                const link = this.getAttribute('data-ref-link');
+                if (link) {
+                    window.open(link, '_blank');
+                }
+            });
+        });
+
+        document.querySelectorAll('[data-ref-type="image"]').forEach(function(item) {
+            item.addEventListener('click', function() {
+                const imageUrl = this.getAttribute('data-ref-image');
+                if (imageUrl) {
+                    document.getElementById('modalImage').src = imageUrl;
+                    document.getElementById('imageModal').classList.remove('hidden');
+                }
+            });
+        });
+
+        document.getElementById('closeModal').addEventListener('click', function() {
+            document.getElementById('imageModal').classList.add('hidden');
+        });
+
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+
+        function openImageModal(imageUrl) {
+            document.getElementById('modalImage').src = imageUrl;
+            document.getElementById('imageModal').classList.remove('hidden');
+        }
+
+        document.querySelectorAll('.ref-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                const refId = this.getAttribute('data-ref');
+                const refSection = document.getElementById('ref');
+                if (refSection) {
+                    refSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+                navbar.classList.remove('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-lg');
+                navbar.classList.add('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
