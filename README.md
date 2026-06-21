@@ -1,4 +1,4 @@
-# OrientDawn
+# Beijing Orient Dawn Technology Co., Ltd
 
 <img width="690" height="613" alt="image" src="https://github.com/user-attachments/assets/180c8d5f-667b-4e9f-a7c6-eca305df5ad5" />
 
@@ -8,4 +8,4 @@
 
 以启明定方向，以曙光寄期许，喻指企业以技术为炬、以创新为核，从点滴微光起步，聚力成势、行稳致远，终迎行业曙光，成就燎原之境。
 
-版权所有 © 2026 北京启明曙光科技有限公司 保留最终解释权 | 更新日期: 2026年6月20日
+版权所有 © 2026 北京启明曙光科技有限公司 保留最终解释权 | 更新日期: 2026年6月21日
