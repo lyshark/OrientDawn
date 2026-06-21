@@ -81,6 +81,13 @@
                 @apply hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
             }
         }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
     </style>
 
     <!-- Schema.org Structured Data - Organization -->
@@ -127,99 +134,68 @@
         ]
     }
     </script>
-
-    <!-- Schema.org Structured Data - WebPage -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "友情链接 - 启明曙光官网",
-        "description": "启明曙光友情链接页面，汇集推荐友情链接、合作伙伴、普通友链和企业友链。我们与优秀的技术伙伴携手共进，共同推动人工智能技术的发展与普及。",
-        "url": "https://www.orientdawn.com/links.html",
-        "mainEntity": {
-            "@type": "ItemList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "特别推荐",
-                    "description": "启明曙光推荐的优质友情链接"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "合作伙伴",
-                    "description": "启明曙光的战略合作伙伴"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "普通友链",
-                    "description": "启明曙光的普通友情链接"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "企业友链",
-                    "description": "启明曙光的企业友情链接"
-                }
-            ]
-        }
-    }
-    </script>
-
-    <!-- Schema.org Structured Data - ContactPoint -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ContactPoint",
-        "contactType": "友情链接合作",
-        "email": "contact@orientdawn.com",
-        "availableLanguage": ["Chinese", "English"]
-    }
-    </script>
 </head>
-<body class="font-sans text-dark bg-gray-50 antialiased">
+<body class="font-sans text-dark bg-gray-50 antialiased overflow-x-hidden">
     <!-- 主内容 -->
-    <main class="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
+    <main class="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white w-full max-w-full overflow-hidden">
         <div class="container mx-auto px-4 md:px-6">
             <!-- 页面标题 -->
-            <div class="text-center mb-16">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">友情链接</h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">汇聚优质资源，共建技术生态。我们与优秀的技术伙伴携手共进，共同推动人工智能技术的发展与普及。</p>
+            <div class="text-center mb-16 relative">
+                <div class="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent -z-10"></div>
+                <div class="absolute top-0 left-1/4 w-32 h-32 bg-blue-400/10 rounded-full blur-3xl"></div>
+                <div class="absolute top-0 right-1/4 w-32 h-32 bg-orange-400/10 rounded-full blur-3xl"></div>
+                
+                <img src="./image/logo-icon.png" alt="启明曙光" class="w-100% h-24 object-contain mb-9 mx-auto">
+                
+                <div class="flex items-center justify-center gap-4 mb-6">
+                    <div class="h-0.5 w-24 bg-gradient-to-r from-transparent to-orange-400 animated-line"></div>
+                    <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Orient Dawn</span>
+                    <div class="h-0.5 w-24 bg-gradient-to-l from-transparent to-orange-400 animated-line"></div>
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8 relative">
+                    友情链接
+                    <span class="absolute -top-2 -right-8 text-6xl font-bold text-gray-100 -z-10">Links</span>
+                </h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">汇聚优质资源，共建技术生态。我们与优秀的技术伙伴携手共进，共同推动人工智能技术的发展与普及。</p>
+                
+                <div class="flex items-center justify-center gap-2 mt-8">
+                    <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
             </div>
 
-            <!-- 推荐友情链接 -->
+            <!-- 统计信息 -->
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12 mb-16">
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-primary" id="stat-recommended">0</div>
+                    <div class="text-sm text-gray-500">特别推荐</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-blue-500" id="stat-partners">0</div>
+                    <div class="text-sm text-gray-500">合作伙伴</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-primary" id="stat-normal">0</div>
+                    <div class="text-sm text-gray-500">普通友链</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-secondary" id="stat-enterprise">0</div>
+                    <div class="text-sm text-gray-500">企业友链</div>
+                </div>
+            </div>
+
+            <!-- 特别推荐 -->
             <section class="mb-16" aria-labelledby="section-recommended">
                 <div class="flex items-center mb-8">
                     <div class="flex items-center space-x-2">
                         <i class="fa fa-star text-orange-500 text-xl" aria-hidden="true"></i>
                         <h2 id="section-recommended" class="text-2xl font-bold text-gray-900">特别推荐</h2>
                     </div>
-                    <div class="flex-1 ml-6 h-px bg-gradient-to-r from-orange-500/50 to-transparent"></div>
+                    <div class="flex-1 ml-6 h-0.5 bg-gradient-to-r from-orange-500/50 to-transparent"></div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- 推荐友链卡片 1 -->
-                    <a href="https://www.microsoft.com/zh-cn" target="_blank" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-16 h-16 opacity-10">
-                            <div class="absolute top-2 right-2 w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fa-brands fa-microsoft text-white text-2xl"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <div class="flex items-center space-x-2 mb-1">
-                                    <h3 class="font-bold text-lg text-gray-800 truncate">微软中国</h3>
-                                    <span class="px-2 py-0.5 bg-orange-100 text-orange-600 text-xs rounded-full font-medium">推荐</span>
-                                </div>
-                                <p class="text-sm text-gray-500 mb-2">www.microsoft.com</p>
-                                <p class="text-sm text-gray-600 line-clamp-2">全球领先的科技公司，致力于通过技术创新改变世界</p>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
+                <div id="section-recommended-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
             </section>
 
             <!-- 合作伙伴 -->
@@ -229,45 +205,21 @@
                         <i class="fa fa-handshake text-blue-500 text-xl" aria-hidden="true"></i>
                         <h2 id="section-partners" class="text-2xl font-bold text-gray-900">合作伙伴</h2>
                     </div>
-                    <div class="flex-1 ml-6 h-px bg-gradient-to-r from-blue-500/50 to-transparent"></div>
+                    <div class="flex-1 ml-6 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent"></div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- 合作伙伴卡片 1 -->
-                    <a href="#" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 text-center group">
-                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa fa-building text-white text-2xl"></i>
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-800 mb-1">科技公司A</h3>
-                        <p class="text-sm text-gray-500">战略合作伙伴</p>
-                    </a>
+                <div id="section-partners-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+            </section>
 
-                    <!-- 合作伙伴卡片 2 -->
-                    <a href="#" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 text-center group">
-                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa fa-flask text-white text-2xl"></i>
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-800 mb-1">研究院B</h3>
-                        <p class="text-sm text-gray-500">技术合作伙伴</p>
-                    </a>
-
-                    <!-- 合作伙伴卡片 3 -->
-                    <a href="#" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 text-center group">
-                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa fa-graduation-cap text-white text-2xl"></i>
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-800 mb-1">大学C</h3>
-                        <p class="text-sm text-gray-500">学术合作伙伴</p>
-                    </a>
-
-                    <!-- 合作伙伴卡片 4 -->
-                    <a href="#" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 text-center group">
-                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa fa-rocket text-white text-2xl"></i>
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-800 mb-1">创新公司D</h3>
-                        <p class="text-sm text-gray-500">创新合作伙伴</p>
-                    </a>
+            <!-- 企业友链 -->
+            <section class="mb-16" aria-labelledby="section-enterprise">
+                <div class="flex items-center mb-8">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa fa-building text-secondary text-xl" aria-hidden="false"></i>
+                        <h2 id="section-enterprise" class="text-2xl font-bold text-gray-900">企业友链</h2>
+                    </div>
+                    <div class="flex-1 ml-6 h-0.5 bg-gradient-to-r from-secondary/50 to-transparent"></div>
                 </div>
+                <div id="section-enterprise-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
             </section>
 
             <!-- 普通友链 -->
@@ -277,191 +229,16 @@
                         <i class="fa fa-link text-primary text-xl" aria-hidden="true"></i>
                         <h2 id="section-normal" class="text-2xl font-bold text-gray-900">普通友链</h2>
                     </div>
-                    <div class="flex-1 ml-6 h-px bg-gradient-to-r from-primary/50 to-transparent"></div>
+                    <div class="flex-1 ml-6 h-0.5 bg-gradient-to-r from-primary/50 to-transparent"></div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <a href="https://www.20010501.xyz/" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 relative overflow-hidden group">
-                        <div class="absolute top-0 left-0 w-24 h-24 opacity-10">
-                            <div class="absolute top-4 left-4 w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-                            <div class="absolute top-10 left-6 w-2 h-2 bg-blue-400 rounded-full"></div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa fa-code text-white text-lg"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h3 class="font-bold text-gray-800 mb-1 truncate">宇外御风</h3>
-                                <p class="text-xs text-gray-500 mb-2">https://www.20010501.xyz/</p>
-                                <p class="text-sm text-gray-600 line-clamp-2">宇外御风 - 分享免费有趣的知识</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.crowya.com/" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 relative overflow-hidden group">
-                        <div class="absolute top-0 left-0 w-24 h-24 opacity-10">
-                            <div class="absolute top-4 left-4 w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-                            <div class="absolute top-10 left-6 w-2 h-2 bg-blue-400 rounded-full"></div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa fa-code text-white text-lg"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h3 class="font-bold text-gray-800 mb-1 truncate">鸦鸦的巢穴</h3>
-                                <p class="text-xs text-gray-500 mb-2">https://www.crowya.com/</p>
-                                <p class="text-sm text-gray-600 line-clamp-2">在乌鸦统治的世界里，洁白的羽毛是有罪的。</p>
-                            </div>
-                        </div>
-                    </a>
-
-
-
-                </div>
+                <div id="section-normal-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
             </section>
 
-            <!-- 企业友链 -->
-            <section class="mb-16" aria-labelledby="section-enterprise">
-                <div class="flex items-center mb-8">
-                    <div class="flex items-center space-x-2">
-                        <i class="fa fa-building text-secondary text-xl" aria-hidden="true"></i>
-                        <h2 id="section-enterprise" class="text-2xl font-bold text-gray-900">企业友链</h2>
-                    </div>
-                    <div class="flex-1 ml-6 h-px bg-gradient-to-r from-secondary/50 to-transparent"></div>
-                    <span class="text-sm text-gray-500">共 <strong class="text-secondary">6</strong> 个</span>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- 企业友链卡片 1 -->
-                    <a href="#" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-24 h-24 opacity-10">
-                            <div class="absolute top-4 right-4 w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-                            <div class="absolute top-10 right-6 w-2 h-2 bg-orange-400 rounded-full"></div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa fa-server text-white text-lg"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <div class="flex items-center space-x-2 mb-1">
-                                    <h3 class="font-bold text-gray-800 truncate">云计算公司A</h3>
-                                    <span class="px-2 py-0.5 bg-orange-100 text-orange-600 text-xs rounded-full">企业</span>
-                                </div>
-                                <p class="text-xs text-gray-500 mb-2">company-a.com</p>
-                                <p class="text-sm text-gray-600 line-clamp-2">提供企业级云计算解决方案</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- 企业友链卡片 2 -->
-                    <a href="#" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-24 h-24 opacity-10">
-                            <div class="absolute top-4 right-4 w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-                            <div class="absolute top-10 right-6 w-2 h-2 bg-orange-400 rounded-full"></div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gradient-to-br from-red-400 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa fa-shield-alt text-white text-lg"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <div class="flex items-center space-x-2 mb-1">
-                                    <h3 class="font-bold text-gray-800 truncate">安全公司B</h3>
-                                    <span class="px-2 py-0.5 bg-orange-100 text-orange-600 text-xs rounded-full">企业</span>
-                                </div>
-                                <p class="text-xs text-gray-500 mb-2">company-b.com</p>
-                                <p class="text-sm text-gray-600 line-clamp-2">网络安全与数据保护专家</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- 企业友链卡片 3 -->
-                    <a href="#" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-24 h-24 opacity-10">
-                            <div class="absolute top-4 right-4 w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-                            <div class="absolute top-10 right-6 w-2 h-2 bg-orange-400 rounded-full"></div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa fa-database text-white text-lg"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <div class="flex items-center space-x-2 mb-1">
-                                    <h3 class="font-bold text-gray-800 truncate">大数据公司C</h3>
-                                    <span class="px-2 py-0.5 bg-orange-100 text-orange-600 text-xs rounded-full">企业</span>
-                                </div>
-                                <p class="text-xs text-gray-500 mb-2">company-c.com</p>
-                                <p class="text-sm text-gray-600 line-clamp-2">大数据分析与人工智能服务</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- 企业友链卡片 4 -->
-                    <a href="#" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-24 h-24 opacity-10">
-                            <div class="absolute top-4 right-4 w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-                            <div class="absolute top-10 right-6 w-2 h-2 bg-orange-400 rounded-full"></div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gradient-to-br from-teal-400 to-teal-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa fa-cloud text-white text-lg"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <div class="flex items-center space-x-2 mb-1">
-                                    <h3 class="font-bold text-gray-800 truncate">AI平台公司D</h3>
-                                    <span class="px-2 py-0.5 bg-orange-100 text-orange-600 text-xs rounded-full">企业</span>
-                                </div>
-                                <p class="text-xs text-gray-500 mb-2">company-d.com</p>
-                                <p class="text-sm text-gray-600 line-clamp-2">人工智能基础设施与服务</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- 企业友链卡片 5 -->
-                    <a href="#" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-24 h-24 opacity-10">
-                            <div class="absolute top-4 right-4 w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-                            <div class="absolute top-10 right-6 w-2 h-2 bg-orange-400 rounded-full"></div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa fa-mobile-alt text-white text-lg"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <div class="flex items-center space-x-2 mb-1">
-                                    <h3 class="font-bold text-gray-800 truncate">移动应用公司E</h3>
-                                    <span class="px-2 py-0.5 bg-orange-100 text-orange-600 text-xs rounded-full">企业</span>
-                                </div>
-                                <p class="text-xs text-gray-500 mb-2">company-e.com</p>
-                                <p class="text-sm text-gray-600 line-clamp-2">移动互联网应用开发与运营</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- 企业友链卡片 6 -->
-                    <a href="#" class="bg-white rounded-2xl shadow-lg border border-gray-100 card-hover p-6 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 w-24 h-24 opacity-10">
-                            <div class="absolute top-4 right-4 w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-                            <div class="absolute top-10 right-6 w-2 h-2 bg-orange-400 rounded-full"></div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fa fa-chart-line text-white text-lg"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <div class="flex items-center space-x-2 mb-1">
-                                    <h3 class="font-bold text-gray-800 truncate">数据分析公司F</h3>
-                                    <span class="px-2 py-0.5 bg-orange-100 text-orange-600 text-xs rounded-full">企业</span>
-                                </div>
-                                <p class="text-xs text-gray-500 mb-2">company-f.com</p>
-                                <p class="text-sm text-gray-600 line-clamp-2">商业智能与数据分析服务</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <!-- 申请友链 -->
-            <section class="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 md:p-12 text-white text-center relative overflow-hidden" aria-labelledby="section-apply">
-                <div class="absolute inset-0 opacity-10" aria-hidden="true">
-                    <div class="absolute top-0 left-0 w-40 h-40 bg-white rounded-full -translate-y-1/2 -translate-x-1/2"></div>
-                    <div class="absolute bottom-0 right-0 w-32 h-32 bg-white rounded-full translate-y-1/2 translate-x-1/2"></div>
+            <!-- 申请友情链接 -->
+            <section class="bg-gradient-to-br from-primary via-primary/95 to-secondary rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute top-0 left-0 w-40 h-40 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="absolute bottom-0 right-0 w-60 h-60 bg-white rounded-full translate-x-1/3 translate-y-1/3"></div>
                 </div>
                 <div class="relative z-10">
                     <h2 id="section-apply" class="text-2xl md:text-3xl font-bold mb-4">申请友情链接</h2>
@@ -469,9 +246,13 @@
                         如果您拥有优质的技术网站或企业官网，欢迎与我们建立友链关系。我们将定期审核申请，确保友链质量。
                     </p>
                     <div class="flex flex-wrap justify-center gap-4">
-                        <a href="mailto:contact@orientdawn.com" class="bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-custom inline-flex items-center space-x-2" aria-label="通过邮件联系启明曙光申请友情链接">
+                        <a href="mailto:contact@orientdawn.com" class="bg-white/20 hover:bg-white/30 text-white px-8 py-3 rounded-full font-semibold backdrop-blur-sm border border-white/30 transition-all inline-flex items-center space-x-2" aria-label="通过邮件联系启明曙光申请友情链接">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <span>联系我们</span>
+                        </a>
+                        <a href="index.html" class="bg-white/20 hover:bg-white/30 text-white px-8 py-3 rounded-full font-semibold backdrop-blur-sm border border-white/30 transition-all inline-flex items-center space-x-2" aria-label="返回启明曙光官网首页">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <span>返回官网</span>
                         </a>
                     </div>
                 </div>
@@ -485,27 +266,217 @@
         <div class="absolute inset-0 rounded-full bg-gradient-to-br from-orange-400 to-red-400 opacity-50 animate-ping"></div>
     </button>
 
+    <!-- Toast 通知 -->
+    <div id="toast" class="fixed top-20 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-xl shadow-xl z-50 transition-all duration-300 opacity-0 invisible">
+        <i class="fa fa-check-circle mr-2 text-green-400"></i>
+        <span id="toast-message">操作成功</span>
+    </div>
+
     <!-- JavaScript -->
     <script>
-        // 移动端菜单切换
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            const icon = menuBtn.querySelector('i');
-            if (mobileMenu.classList.contains('hidden')) {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
+        //  友链数据定义 
+        const linksData = {
+            recommended: [
+                {
+                    name: '微软中国',
+                    url: 'https://www.microsoft.com/',
+                    description: '全球领先的科技公司，致力于通过技术创新改变世界。',
+                    icon: 'fa-brands fa-microsoft text-white text-2xl',
+                    color: 'blue'
+                }
+            ],
+            partners: [
+                {
+                    name: '科技公司A',
+                    url: '#',
+                    description: '战略合作伙伴',
+                    icon: 'fa-building',
+                    color: 'blue'
+                }
+            ],
+            normal: [
+                {
+                    name: '宇外御风',
+                    url: 'https://www.20010501.xyz/',
+                    description: '分享免费有趣的知识',
+                    icon: 'fa-globe',
+                    color: 'blue'
+                },
+                {
+                    name: '鸦鸦的巢穴',
+                    url: 'https://www.crowya.com/',
+                    description: '在乌鸦统治的世界里，洁白的羽毛是有罪的。',
+                    icon: 'fa-globe',
+                    color: 'blue'
+                },
+                {
+                    name: '小曹同学',
+                    url: 'https://blog.caotx.cn/',
+                    description: '小曹同学',
+                    icon: 'fa-globe',
+                    color: 'blue'
+                },
+                {
+                    name: 'lololowe的博客',
+                    url: 'https://blog.lololowe.com/',
+                    description: '恬淡无为',
+                    icon: 'fa-globe',
+                    color: 'blue'
+                }
+            ],
+            enterprise: [
+                {
+                    name: '云计算公司A',
+                    url: '#',
+                    description: '提供企业级云计算解决方案',
+                    icon: 'fa-server',
+                    color: 'orange'
+                }
+            ]
+        };
+
+        // 颜色映射
+        const colorMap = {
+            blue: { from: 'from-blue-500', to: 'to-blue-600', bg: 'bg-blue-500' },
+            purple: { from: 'from-purple-500', to: 'to-purple-600', bg: 'bg-purple-500' },
+            green: { from: 'from-green-500', to: 'to-green-600', bg: 'bg-green-500' },
+            orange: { from: 'from-orange-500', to: 'to-orange-600', bg: 'bg-orange-500' },
+            red: { from: 'from-red-500', to: 'to-red-600', bg: 'bg-red-500' },
+            indigo: { from: 'from-indigo-500', to: 'to-indigo-600', bg: 'bg-indigo-500' },
+            teal: { from: 'from-teal-500', to: 'to-teal-600', bg: 'bg-teal-500' },
+            pink: { from: 'from-pink-500', to: 'to-pink-600', bg: 'bg-pink-500' }
+        };
+
+        //  渲染函数 
+        function getColorClasses(color, isPartner = false) {
+            const c = colorMap[color] || colorMap.blue;
+            return isPartner 
+                ? `bg-gradient-to-br ${c.from} ${c.to}`
+                : `bg-gradient-to-br ${c.from} ${c.to}`;
+        }
+
+        function renderLinkCard(link, type) {
+            const isPartner = type === 'partners';
+            const colorClass = getColorClasses(link.color, isPartner);
+            const borderColor = colorMap[link.color]?.bg || 'bg-blue-500';
+            
+            if (isPartner) {
+                return `
+                    <a href="${link.url}" target="_blank" class="group relative bg-white rounded-2xl p-6 card-hover overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br ${link.color}/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${colorMap[link.color]?.from} ${colorMap[link.color]?.to} opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="${colorClass} w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                            <i class="fa ${link.icon || 'fa-globe'} text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-800 mb-1 relative">${link.name}</h3>
+                        <p class="text-sm text-gray-500 relative">${link.description || '战略合作伙伴'}</p>
+                    </a>
+                `;
             } else {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
+                const isRecommended = type === 'recommended';
+                const isEnterprise = type === 'enterprise';
+                const tagHtml = isRecommended 
+                    ? '<span class="px-2 py-0.5 bg-gradient-to-r from-orange-400 to-red-500 text-white text-xs rounded-full font-medium shadow-sm">推荐</span>'
+                    : '';
+                
+                return `
+                    <a href="${link.url}" target="_blank" class="group relative bg-white rounded-2xl p-6 card-hover overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br ${link.color}/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b ${colorMap[link.color]?.from} ${colorMap[link.color]?.to} opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="absolute -top-4 -right-4 w-20 h-20 ${borderColor} rounded-full opacity-5 group-hover:opacity-10 group-hover:scale-150 transition-all duration-500"></div>
+                        <div class="absolute -bottom-2 -left-2 w-16 h-16 ${borderColor} rounded-full opacity-5 group-hover:opacity-10 group-hover:scale-150 transition-all duration-500"></div>
+                        
+                        <div class="flex items-start space-x-4 relative">
+                            <div class="${colorClass} w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                                <i class="fa ${link.icon || 'fa-globe'} text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <h3 class="font-bold text-gray-800 truncate group-hover:text-${link.color}-600 transition-colors">${link.name}</h3>
+                                    ${tagHtml}
+                                </div>
+                                <p class="text-xs text-gray-400 mb-2 truncate flex items-center">
+                                    <i class="fa fa-link mr-1 opacity-50"></i>${link.url}
+                                </p>
+                                <p class="text-sm text-gray-600 line-clamp-2 group-hover:text-gray-700 transition-colors">${link.description || ''}</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-dashed border-gray-200 flex items-center justify-between relative">
+                            <span class="text-xs text-gray-400 flex items-center gap-2 bg-gray-50 px-3 py-1 rounded-full group-hover:bg-${link.color}-50 group-hover:text-${link.color}-600 transition-colors">
+                                <i class="fa fa-external-link-alt text-xs"></i>访问网站
+                            </span>
+                            <span class="w-7 h-7 rounded-full ${borderColor} bg-opacity-10 flex items-center justify-center group-hover:bg-opacity-20 group-hover:scale-110 transition-all">
+                                <i class="fa fa-arrow-right text-xs ${borderColor.replace('bg-', 'text-')} group-hover:translate-x-1 transition-transform inline-block"></i>
+                            </span>
+                        </div>
+                    </a>
+                `;
             }
+        }
+
+        function renderAllLinks() {
+            // 渲染特别推荐
+            document.getElementById('section-recommended-grid').innerHTML = 
+                linksData.recommended.map(link => renderLinkCard(link, 'recommended')).join('');
+            
+            // 渲染合作伙伴
+            document.getElementById('section-partners-grid').innerHTML = 
+                linksData.partners.map(link => renderLinkCard(link, 'partners')).join('');
+            
+            // 渲染普通友链
+            document.getElementById('section-normal-grid').innerHTML = 
+                linksData.normal.map(link => renderLinkCard(link, 'normal')).join('');
+            
+            // 渲染企业友链
+            document.getElementById('section-enterprise-grid').innerHTML = 
+                linksData.enterprise.map(link => renderLinkCard(link, 'enterprise')).join('');
+            
+            // 更新统计
+            updateStats();
+        }
+
+        function updateStats() {
+            document.getElementById('stat-recommended').textContent = linksData.recommended.length;
+            document.getElementById('stat-partners').textContent = linksData.partners.length;
+            document.getElementById('stat-normal').textContent = linksData.normal.length;
+            document.getElementById('stat-enterprise').textContent = linksData.enterprise.length;
+            document.getElementById('enterprise-count').textContent = linksData.enterprise.length;
+        }
+
+
+
+        // Toast 提示
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            
+            toastMessage.textContent = message;
+            
+            if (type === 'error') {
+                toast.innerHTML = `<i class="fa fa-exclamation-circle mr-2 text-red-400"></i><span>${message}</span>`;
+            } else {
+                toast.innerHTML = `<i class="fa fa-check-circle mr-2 text-green-400"></i><span>${message}</span>`;
+            }
+            
+            toast.classList.remove('opacity-0', 'invisible');
+            toast.classList.add('opacity-100', 'visible');
+            
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'invisible');
+                toast.classList.remove('opacity-100', 'visible');
+            }, 3000);
+        }
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            renderAllLinks();
         });
 
+
+
         // 导航栏滚动效果
-        const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('py-2', 'shadow-lg');
                 navbar.classList.remove('py-3', 'shadow-md');
@@ -529,10 +500,7 @@
         });
         
         backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>
