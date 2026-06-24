@@ -24,4 +24,10 @@
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://www.orientdawn.com/404.html</loc>
+    <lastmod>2026-06-17T13:54:17Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
